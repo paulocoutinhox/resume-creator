@@ -1,0 +1,28 @@
+{% set profile = resume.profile %}
+<footer class="mt-auto border-t border-slate-200 bg-slate-50/80 py-10">
+    <div class="mx-auto max-w-5xl px-4">
+        <div class="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+            <div class="max-w-md space-y-3">
+                <p class="text-sm font-semibold text-slate-900">{{ profile.name }}</p>
+                <p class="text-sm leading-relaxed text-slate-600">{{ resume.professional.role }}</p>
+            </div>
+            {% if resume.social %}
+                <div class="space-y-2">
+                    <p class="text-sm font-semibold text-slate-900">{{ t('section.social') }}</p>
+                    <ul class="space-y-1.5 text-sm">
+                        {% for link in resume.social %}
+                            <li>
+                                <a class="capitalize text-slate-600 hover:text-primary"
+                                   href="{{ link.url }}" rel="me noopener noreferrer" target="_blank">{{ link.network.value }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+        </div>
+        <div class="mt-8 flex flex-col gap-2 border-t border-slate-200 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+            <span><a class="font-medium text-primary hover:text-primary-hover" href="mailto:{{ profile.email }}">{{ profile.email }}</a></span>
+            <span>© {{ profile.name }}</span>
+        </div>
+    </div>
+</footer>

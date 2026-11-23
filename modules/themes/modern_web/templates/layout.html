@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="{{ locale.value }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0891b2">
+    <title>{{ resume.profile.name }} — {{ resume.professional.role }}</title>
+    <meta name="description" content="{{ resume.professional.summary }}">
+    <link rel="icon" href="{{ web_asset_base }}/favicon/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ web_asset_base }}/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ web_asset_base }}/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ web_asset_base }}/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="{{ web_asset_base }}/favicon/site.webmanifest">
+    <link rel="stylesheet" href="{{ web_asset_base }}/main.css">
+</head>
+<body class="flex min-h-dvh flex-col bg-gradient-to-b from-slate-50 via-white to-slate-50 text-slate-900 antialiased">
+
+{% include "header.html" %}
+
+<main class="flex-1">
+    {% include "hero.html" %}
+
+    <div class="mx-auto max-w-5xl px-4 pb-20 space-y-16">
+        {% if resume.experience %}{% include "experience.html" %}{% endif %}
+        {% if resume.education %}{% include "education.html" %}{% endif %}
+        {% if resume.certifications %}{% include "certifications.html" %}{% endif %}
+        {% if resume.side_projects %}{% include "side_projects.html" %}{% endif %}
+        {% if resume.open_source_projects %}{% include "open_source_projects.html" %}{% endif %}
+        {% if resume.professional.top_skills or resume.professional.skills %}{% include "skills.html" %}{% endif %}
+        {% if resume.languages %}{% include "languages.html" %}{% endif %}
+        {% include "contact.html" %}
+    </div>
+</main>
+
+{% include "footer.html" %}
+
+<script type="module" src="{{ web_asset_base }}/main.js"></script>
+</body>
+</html>

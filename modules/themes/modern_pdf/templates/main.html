@@ -1,0 +1,165 @@
+{% set profile = resume.profile %}
+{% set overview = resume.professional %}
+
+<header class="cv__heading">
+    <h1 class="cv__name">{{ profile.name }}</h1>
+    <p class="cv__role">{{ overview.role }}</p>
+</header>
+
+<section class="cv__section">
+    <h2 class="cv__section-title">{{ t('section.profile') }}</h2>
+    <p class="cv__summary">{{ overview.summary }}</p>
+    <p class="cv__role-meta">
+        {{ icon(IconKey.BRIEFCASE, 'cv__icon cv__icon--inline', stroke='#475569') | safe }}
+        {{ t('label.career_experience') }}: {{ humanize_duration(months_between(overview.role_start, none)) }}
+    </p>
+</section>
+
+{% if resume.experience %}
+<section class="cv__section">
+    <h2 class="cv__section-title">{{ t('section.experience') }}</h2>
+    {% for entry in resume.experience %}
+        <article class="cv__entry">
+            <div class="cv__entry-head">
+                <div>
+                    <h3 class="cv__entry-title">{{ entry.role }}</h3>
+                    <p class="cv__entry-org">
+                        {{ icon(IconKey.BUILDING, 'cv__icon cv__icon--inline', stroke='#475569') | safe }}
+                        {{ entry.company }}{% if entry.location %} — {{ entry.location }}{% endif %}
+                    </p>
+                </div>
+                <p class="cv__entry-date">
+                    {{ format_month_year(entry.start) }} – {% if entry.end %}{{ format_month_year(entry.end) }}{% else %}{{ t('label.present') }}{% endif %}
+                </p>
+            </div>
+            {% if entry.description %}<p class="cv__entry-text">{{ entry.description }}</p>{% endif %}
+            {% if entry.bullets %}
+                <ul class="cv__bullets">
+                    {% for bullet in entry.bullets %}<li>{{ bullet }}</li>{% endfor %}
+                </ul>
+            {% endif %}
+        </article>
+    {% endfor %}
+</section>
+{% endif %}
+
+{% if resume.education %}
+<section class="cv__section">
+    <h2 class="cv__section-title">{{ t('section.education') }}</h2>
+    {% for entry in resume.education %}
+        <article class="cv__entry">
+            <div class="cv__entry-head">
+                <div>
+                    <h3 class="cv__entry-title">{{ entry.title }}</h3>
+                    <p class="cv__entry-org">
+                        {{ icon(IconKey.GRADUATION_CAP, 'cv__icon cv__icon--inline', stroke='#475569') | safe }}
+                        {{ entry.institution }} — {{ t('education_level.' ~ entry.level.value) }}
+                    </p>
+                </div>
+                <p class="cv__entry-date">
+                    {{ format_month_year(entry.start) }} – {% if entry.end %}{{ format_month_year(entry.end) }}{% else %}{{ t('label.present') }}{% endif %}
+                </p>
+            </div>
+            {% if entry.description %}<p class="cv__entry-text">{{ entry.description }}</p>{% endif %}
+            {% if entry.bullets %}
+                <ul class="cv__bullets">
+                    {% for bullet in entry.bullets %}<li>{{ bullet }}</li>{% endfor %}
+                </ul>
+            {% endif %}
+        </article>
+    {% endfor %}
+</section>
+{% endif %}
+
+{% if resume.certifications %}
+<section class="cv__section">
+    <h2 class="cv__section-title">{{ t('section.certifications') }}</h2>
+    {% for entry in resume.certifications %}
+        <article class="cv__entry">
+            <div class="cv__entry-head">
+                <div>
+                    <h3 class="cv__entry-title">{{ entry.title }}</h3>
+                    <p class="cv__entry-org">
+                        {{ icon(IconKey.AWARD, 'cv__icon cv__icon--inline', stroke='#475569') | safe }}
+                        {{ entry.institution }}
+                    </p>
+                </div>
+                <p class="cv__entry-date">
+                    {{ format_month_year(entry.start) }} – {% if entry.end %}{{ format_month_year(entry.end) }}{% else %}{{ t('label.present') }}{% endif %}
+                </p>
+            </div>
+            {% if entry.bullets %}
+                <ul class="cv__bullets">
+                    {% for bullet in entry.bullets %}<li>{{ bullet }}</li>{% endfor %}
+                </ul>
+            {% endif %}
+            {% if entry.credential_url %}
+                <p class="cv__entry-text">
+                    {{ icon(IconKey.EXTERNAL_LINK, 'cv__icon cv__icon--inline', stroke='#475569') | safe }}
+                    <a href="{{ entry.credential_url }}">{{ t('label.view_credential') }}</a>
+                </p>
+            {% endif %}
+        </article>
+    {% endfor %}
+</section>
+{% endif %}
+
+{% if resume.side_projects %}
+<section class="cv__section">
+    <h2 class="cv__section-title">{{ t('section.side_projects') }}</h2>
+    {% for entry in resume.side_projects %}
+        <article class="cv__entry">
+            <div class="cv__entry-head">
+                <div>
+                    <h3 class="cv__entry-title">{{ entry.title }}</h3>
+                </div>
+                <p class="cv__entry-date">
+                    {{ format_month_year(entry.start) }} – {% if entry.end %}{{ format_month_year(entry.end) }}{% else %}{{ t('label.present') }}{% endif %}
+                </p>
+            </div>
+            <p class="cv__entry-text">{{ entry.description }}</p>
+            {% if entry.bullets %}
+                <ul class="cv__bullets">
+                    {% for bullet in entry.bullets %}<li>{{ bullet }}</li>{% endfor %}
+                </ul>
+            {% endif %}
+            {% if entry.url %}
+                <p class="cv__entry-text">
+                    {{ icon(IconKey.EXTERNAL_LINK, 'cv__icon cv__icon--inline', stroke='#475569') | safe }}
+                    <a href="{{ entry.url }}">{{ t('label.view_project') }}</a>
+                </p>
+            {% endif %}
+        </article>
+    {% endfor %}
+</section>
+{% endif %}
+
+{% if resume.open_source_projects %}
+<section class="cv__section">
+    <h2 class="cv__section-title">{{ t('section.open_source_projects') }}</h2>
+    {% for entry in resume.open_source_projects %}
+        <article class="cv__entry">
+            <div class="cv__entry-head">
+                <div>
+                    <h3 class="cv__entry-title">{{ entry.title }}</h3>
+                </div>
+                <p class="cv__entry-date">
+                    {{ format_month_year(entry.start) }} – {% if entry.end %}{{ format_month_year(entry.end) }}{% else %}{{ t('label.present') }}{% endif %}
+                </p>
+            </div>
+            <p class="cv__entry-text">{{ entry.description }}</p>
+            {% if entry.bullets %}
+                <ul class="cv__bullets">
+                    {% for bullet in entry.bullets %}<li>{{ bullet }}</li>{% endfor %}
+                </ul>
+            {% endif %}
+            {% if entry.url %}
+                <p class="cv__entry-text">
+                    {{ icon(IconKey.EXTERNAL_LINK, 'cv__icon cv__icon--inline', stroke='#475569') | safe }}
+                    <a href="{{ entry.url }}">{{ t('label.view_project') }}</a>
+                </p>
+            {% endif %}
+        </article>
+    {% endfor %}
+</section>
+{% endif %}

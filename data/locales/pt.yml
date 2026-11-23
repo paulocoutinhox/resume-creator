@@ -1,0 +1,241 @@
+profile:
+  name: "Paulo Coutinho"
+  email: "paulocoutinhox@gmail.com"
+  phone: "+55 21 99386 0010"
+  whatsapp: "+55 21 99386 0010"
+  location: "São Gonçalo, Rio de Janeiro, Brasil"
+  citizenship: "Brasil"
+  pronouns: "he/him"
+  birth: { year: 1985, month: 9, day: 7 }
+
+professional:
+  role: "Engenheiro Mobile e Full Stack · Desenvolvedor de Games · Criador de Soluções com IA"
+  role_start: { year: 2005, month: 1 }
+  summary: >-
+    Engenheiro mobile com mais de 20 anos de experiência. Desenvolvo apps
+    nativos para iOS em Swift e Objective-C e para Android em Kotlin e Java.
+    Compartilho código mobile entre as plataformas com núcleos em C++.
+    Cofundador da Ubook, onde lidero a plataforma mobile. Criador da Haylen,
+    engine open source em C++ para games e apps.
+  top_skills:
+    - "Mobile Engineer"
+    - "Full Stack Engineer"
+    - "Game Developer"
+    - "AI Solution Creator"
+  skills:
+    - "Swift"
+    - "Objective-C"
+    - "Kotlin"
+    - "Java"
+    - "C++"
+    - "Python"
+    - "Lua"
+    - "JavaScript"
+    - "TypeScript"
+    - "FastAPI · Django"
+    - "Agentes de IA · LLMs"
+    - "CI/CD · App Store · Google Play"
+
+social:
+  - { network: linkedin,  url: "https://www.linkedin.com/in/paulocoutinhox", handle: "in/paulocoutinhox" }
+  - { network: github,    url: "https://github.com/paulocoutinhox",          handle: "@paulocoutinhox" }
+  - { network: site,      url: "https://paulocoutinho.pages.dev",            handle: "paulocoutinho.pages.dev" }
+  - { network: youtube,   url: "https://www.youtube.com/@paulocoutinhox",    handle: "@paulocoutinhox" }
+  - { network: instagram, url: "https://www.instagram.com/paulocoutinhox",   handle: "@paulocoutinhox" }
+  - { network: x,         url: "https://x.com/paulocoutinhox",               handle: "@paulocoutinhox" }
+
+languages:
+  - { name: "Português", level: native }
+  - { name: "Inglês",    level: advanced }
+
+experience:
+  - company: "Ubook"
+    location: "Grande Rio de Janeiro, Brasil"
+    company_size: big
+    role: "Gerente de Engenharia Mobile — Cofundador"
+    start: { year: 2014, month: 1 }
+    end: null
+    description: >-
+      Cofundador e líder hands-on dos apps iOS e Android de uma das maiores
+      plataformas de audiolivros e conteúdo falado da América Latina.
+    bullets:
+      - "Ubook Mobile SDK: núcleo em C++ compartilhado para áudio, sincronização e DRM, usado pelos apps iOS (Swift) e Android (Kotlin)."
+      - "Reprodução offline-first e streaming com baixa latência."
+      - "Pipeline de releases para App Store e Google Play."
+      - "Funcionalidades de IA e LLMs dentro dos apps mobile."
+
+  - company: "PRSoluções"
+    location: "Grande Rio de Janeiro, Brasil"
+    company_size: small
+    role: "CEO · Líder Técnico Mobile e Web"
+    start: { year: 2007, month: 6 }
+    end: { year: 2021, month: 1 }
+    description: >-
+      Sócio fundador à frente dos times de Mobile e Web para clientes de todo o
+      Brasil.
+    bullets:
+      - "Apps nativos iOS e Android para produtos de clientes."
+      - "Back-ends e APIs web em Python e JavaScript."
+
+  - company: "Umbarato.com"
+    location: "Grande Rio de Janeiro, Brasil"
+    company_size: mid
+    role: "Analista de Sistemas Sênior — Web e Mobile"
+    start: { year: 2011, month: 1 }
+    end: { year: 2014, month: 1 }
+    description: >-
+      Liderança das iniciativas Web e Mobile da marca de e-commerce.
+    bullets:
+      - "Lançamento dos produtos mobile da empresa."
+      - "Coordenação de equipe e adoção de Scrum."
+
+  - company: "WebX Intermediações e Agenciamento via Internet"
+    location: "Brasil"
+    company_size: small
+    role: "Analista de Desenvolvimento de Sistemas"
+    start: { year: 2011, month: 1 }
+    end: { year: 2015, month: 3 }
+    description: >-
+      Sistemas web para a marca de e-commerce Umbarato.com.
+    bullets:
+      - "Serviços de back-end, integrações e funcionalidades para o cliente final."
+
+  - company: "Bit Services Inovação e Tecnologia (Ideais)"
+    location: "Brasil"
+    company_size: mid
+    role: "Desenvolvedor Java"
+    start: { year: 2010, month: 4 }
+    end: { year: 2011, month: 12 }
+    description: >-
+      Módulos Java dos sites de e-commerce Americanas, Shoptime e Submarino.
+    bullets:
+      - "Painel de controle do usuário."
+      - "Módulos de pagamentos e controle de pedidos."
+
+  - company: "Boa Diversão Promoção e Entretenimento"
+    location: "Brasil"
+    company_size: small
+    role: "Desenvolvedor Web"
+    start: { year: 2008, month: 1 }
+    end: { year: 2010, month: 4 }
+    description: >-
+      Sistema web interno para operar grandes eventos.
+    bullets:
+      - "Venda e emissão de ingressos, sangrias, relatórios e operação dos eventos."
+
+  - company: "Zeus Consultoria"
+    location: "Brasil"
+    company_size: small
+    role: "Desenvolvedor Web e Desktop (Visual Basic, Delphi)"
+    start: { year: 2006, month: 8 }
+    end: { year: 2008, month: 1 }
+    description: >-
+      Sites dinâmicos e aplicações de negócio em Visual Basic e Delphi para
+      clientes.
+
+  - company: "Ecosystem de Alcântara Comércio e Serviços de Informática"
+    location: "Brasil"
+    company_size: small
+    role: "Desenvolvedor Desktop (Visual Basic, Delphi) e Técnico de Montagem e Manutenção de Computadores"
+    start: { year: 2005, month: 1 }
+    end: { year: 2005, month: 8 }
+    description: >-
+      Aplicações desktop em Visual Basic e Delphi, além de montagem e manutenção
+      de computadores.
+
+education:
+  - level: post_graduation
+    institution: "Estácio"
+    title: "Especialização em Desenvolvimento Mobile, Tecnologia da Informação"
+    start: { year: 2022, month: 7 }
+    end: { year: 2023, month: 12 }
+    description: >-
+      Desenvolvimento mobile nativo para Android e iOS com Java, Kotlin e Swift,
+      cobrindo UI/UX, integração com APIs, testes automatizados, publicação e
+      boas práticas para entrega em produção.
+
+  - level: bachelor
+    institution: "FACITE"
+    title: "Bacharelado em Teologia"
+    start: { year: 2019, month: 1 }
+    end: { year: 2021, month: 12 }
+
+certifications: []
+
+open_source_projects:
+  - title: "Haylen"
+    description: >-
+      Minha engine para games, apps multimídia e aplicativos: núcleo em C++20
+      com toda a API em Lua, onde um único pacote de app roda em macOS,
+      Windows, Linux, iOS, Android, tvOS, visionOS e web.
+    bullets:
+      - "Renderização 2D, animação, física, mapas tiled, UI, texto, áudio, input e rede."
+      - "Back-ends Metal, Direct3D, Vulkan, OpenGL e WebGPU."
+      - "Plugins nativos em Swift, Kotlin, Java, JavaScript e C++ sob uma única API Lua."
+      - "Uma CLI que cria, executa, testa e empacota apps."
+    url: "https://github.com/haylen-org/haylen"
+    start: { year: 2026, month: 9 }
+    end: null
+
+  - title: "Varn"
+    description: >-
+      Runtime Lua com núcleo em C++ para escrever back-ends, ferramentas e apps
+      uma única vez e rodar o mesmo código em Linux, macOS, Windows, iOS,
+      Android e no navegador. Servidor HTTP e WebSocket, tarefas assíncronas,
+      arquivos, criptografia e empacotamento já vêm prontos, sem bibliotecas
+      extras, e ele atende cerca de 2,5× mais requisições por núcleo que
+      Node.js e Python.
+    url: "https://github.com/varn-org/varn"
+    start: { year: 2026, month: 9 }
+    end: null
+
+  - title: "IonClaw"
+    description: >-
+      Orquestrador de agentes de IA multiplataforma em C++ que transforma
+      qualquer dispositivo, inclusive o celular, em uma plataforma
+      independente de automação com múltiplos agentes.
+    url: "https://github.com/ionclaw-org/ionclaw"
+    start: { year: 2026, month: 3 }
+    end: null
+
+  - title: "PDFium Library"
+    description: >-
+      Builds prontos do PDFium do Google para iOS, Android, macOS, Linux,
+      Windows e WebAssembly, para que apps exibam PDFs sem precisar montar o
+      ambiente de build do Chromium. Mais de 1.000 estrelas no GitHub.
+    url: "https://github.com/paulocoutinhox/pdfium-lib"
+    start: { year: 2018, month: 5 }
+    end: null
+
+  - title: "XPLPC"
+    description: >-
+      Cross Platform Lite Procedure Call: chama código C++ compartilhado a
+      partir de Swift, Kotlin, Flutter, Python e WebAssembly no mobile, desktop
+      e web.
+    url: "https://github.com/xplpc/xplpc"
+    start: { year: 2023, month: 1 }
+    end: null
+
+  - title: "Nativium"
+    description: >-
+      Template de projeto C++ para escrever uma biblioteca uma vez e compilar
+      para iOS, Android, desktop e WebAssembly, com build, dependências e
+      integração com o mobile já prontos. É a base do Ubook Mobile SDK.
+    url: "https://github.com/nativium/nativium"
+    start: { year: 2022, month: 5 }
+    end: null
+
+  - title: "FastKit"
+    description: >-
+      Site público multi-tenant, painel administrativo e API feitos em FastAPI
+      e servidos por um único processo, com contas, assinaturas, pagamentos
+      (Stripe, RevenueCat) e conteúdo integrados.
+    url: "https://github.com/paulocoutinhox/fastkit"
+    start: { year: 2026, month: 8 }
+    end: null
+
+  - title: "Kaktos"
+    description: "Gerador de sites estáticos em Python pensado para fluxos de deploy serverless."
+    url: "https://github.com/paulocoutinhox/kaktos"
+    start: { year: 2021, month: 10 }
+    end: null

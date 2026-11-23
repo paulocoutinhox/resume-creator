@@ -1,0 +1,216 @@
+@page {
+    size: A4;
+    /* zero side margins keep the sidebar gradient flush with the page edges,
+       while top/bottom margins prevent content from touching page edges across pages */
+    margin: 18pt 0;
+    background: linear-gradient(to right, #1f2d3d 0, #1f2d3d 33%, #ffffff 33%, #ffffff 100%);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 9.75pt;
+    line-height: 1.5;
+    color: #1f2937;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.cv {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.cv__sidebar,
+.cv__main {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.cv__sidebar {
+    width: 33%;
+    color: #ffffff;
+    padding: 14pt 22pt;
+}
+
+.cv__main {
+    padding: 14pt 30pt;
+    color: #1f2937;
+}
+
+.cv__photo-frame {
+    text-align: center;
+    margin-bottom: 22pt;
+}
+
+.cv__photo {
+    width: 130pt;
+    height: 130pt;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3pt solid #ffffff;
+}
+
+.cv__section--sidebar { margin-bottom: 18pt; }
+
+.cv__contact {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #e2e8f0;
+    font-size: 9pt;
+}
+
+.cv__contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8pt;
+    margin-bottom: 6pt;
+}
+
+.cv__contact a { color: #ffffff; }
+
+.cv__tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.cv__tags li {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.12);
+    color: #f1f5f9;
+    padding: 2pt 6pt;
+    border-radius: 3pt;
+    font-size: 8.5pt;
+    margin: 0 4pt 4pt 0;
+}
+
+.cv__icon {
+    width: 11pt;
+    height: 11pt;
+    flex-shrink: 0;
+}
+
+.cv__icon--inline {
+    width: 10pt;
+    height: 10pt;
+    vertical-align: -1pt;
+    margin-right: 4pt;
+}
+
+.cv__heading { margin-bottom: 14pt; }
+
+.cv__name {
+    font-size: 26pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 0;
+    color: #0f172a;
+}
+
+.cv__role {
+    font-size: 12pt;
+    font-weight: 500;
+    color: #475569;
+    margin: 2pt 0 0;
+}
+
+.cv__section { margin-bottom: 16pt; }
+
+/* main column section title (slate, light separator) */
+.cv__section-title {
+    font-size: 12pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #0f172a;
+    border-bottom: 1pt solid #cbd5e1;
+    padding-bottom: 3pt;
+    margin: 0 0 8pt;
+    /* never leave a section title orphaned at the bottom of a page */
+    break-after: avoid;
+    page-break-after: avoid;
+}
+
+/* sidebar variant overrides color and separator (declared after the base so it wins) */
+.cv__section-title--sidebar {
+    color: #ffffff;
+    font-size: 10.5pt;
+    letter-spacing: 0.1em;
+    border-bottom: 0.6pt solid rgba(255, 255, 255, 0.25);
+    padding-bottom: 4pt;
+    margin: 0 0 10pt;
+}
+
+.cv__summary {
+    margin: 0 0 6pt;
+    text-align: justify;
+}
+
+.cv__role-meta {
+    margin: 0;
+    color: #475569;
+    font-size: 9pt;
+}
+
+.cv__entry {
+    margin-bottom: 10pt;
+    /* keep an entire entry on the same page so titles/dates/descriptions never split */
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+.cv__entry-head {
+    display: table;
+    width: 100%;
+    margin-bottom: 4pt;
+}
+
+.cv__entry-head > div {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.cv__entry-head > p.cv__entry-date {
+    display: table-cell;
+    text-align: right;
+    vertical-align: top;
+    white-space: nowrap;
+    color: #475569;
+    font-size: 9pt;
+    width: 30%;
+}
+
+.cv__entry-title {
+    margin: 0;
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.cv__entry-org {
+    margin: 1pt 0 0;
+    color: #475569;
+    font-size: 9.5pt;
+}
+
+.cv__entry-text {
+    margin: 4pt 0 0;
+    text-align: justify;
+}
+
+.cv__bullets {
+    margin: 4pt 0 0 14pt;
+    padding: 0;
+}
+
+.cv__bullets li {
+    margin-bottom: 2pt;
+}

@@ -1,0 +1,14 @@
+site:
+  languages: [en, pt]
+  default_language: en
+  output_basename: resume
+  theme:
+    pdf: modern-pdf
+    web: modern-web
+
+assets:
+  photo: data/img/profile.png
+
+data:
+  en: locales/en.yml
+  pt: locales/pt.yml

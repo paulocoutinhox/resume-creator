@@ -1,0 +1,72 @@
+section:
+  profile: "Profile"
+  contact: "Contact"
+  social: "Social"
+  languages: "Languages"
+  top_skills: "Top Skills"
+  skills: "Skills"
+  experience: "Work Experience"
+  education: "Education"
+  certifications: "Licenses & Certifications"
+  side_projects: "Side Projects"
+  open_source_projects: "Open Source Projects"
+
+label:
+  role: "Role"
+  career_experience: "Career experience"
+  gender: "Gender"
+  citizenship: "Citizenship"
+  pronouns: "Pronouns"
+  birth_date: "Date of birth"
+  present: "Present"
+  email: "Email"
+  phone: "Phone"
+  whatsapp: "WhatsApp"
+  location: "Location"
+  view_project: "View project"
+  view_credential: "View credential"
+
+company_size:
+  small: "Small company"
+  mid: "Mid-sized company"
+  big: "Large company"
+
+education_level:
+  high_school: "High school"
+  unfinished_bachelor: "Unfinished Bachelor's degree"
+  two_year: "Two-year degree"
+  bachelor: "Bachelor's degree"
+  post_graduation: "Post-graduation"
+  mba: "MBA"
+  master: "Master's degree"
+  doctoral: "Doctoral degree"
+  post_doctoral: "Post-doctoral"
+
+language_level:
+  basic: "Basic"
+  intermediate: "Intermediate"
+  upper_intermediate: "Upper intermediate"
+  advanced: "Advanced"
+  fluent: "Fluent"
+  native: "Native"
+
+pronouns:
+  he/him: "He/Him"
+  she/her: "She/Her"
+  they/them: "They/Them"
+  custom: "{value}"
+
+gender:
+  male: "Male"
+  female: "Female"
+  other: "Other"
+
+duration:
+  month_one: "{count} month"
+  month_other: "{count} months"
+  year_one: "{count} year"
+  year_other: "{count} years"
+  year_and_month: "{years} and {months}"
+
+date_range:
+  open: "{start} – {end}"

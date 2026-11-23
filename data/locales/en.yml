@@ -1,0 +1,237 @@
+profile:
+  name: "Paulo Coutinho"
+  email: "paulocoutinhox@gmail.com"
+  phone: "+55 21 99386 0010"
+  whatsapp: "+55 21 99386 0010"
+  location: "São Gonçalo, Rio de Janeiro, Brazil"
+  citizenship: "Brazil"
+  pronouns: "he/him"
+  birth: { year: 1985, month: 9, day: 7 }
+
+professional:
+  role: "Mobile & Full Stack Engineer · Game Developer · AI Solution Creator"
+  role_start: { year: 2005, month: 1 }
+  summary: >-
+    Mobile engineer with 20+ years of experience. I build native iOS apps in
+    Swift and Objective-C and native Android apps in Kotlin and Java. I share
+    mobile code across platforms with C++ cores. Co-founder of Ubook, where I
+    lead the mobile platform. Creator of Haylen, an open source C++ engine for
+    games and apps.
+  top_skills:
+    - "Mobile Engineer"
+    - "Full Stack Engineer"
+    - "Game Developer"
+    - "AI Solution Creator"
+  skills:
+    - "Swift"
+    - "Objective-C"
+    - "Kotlin"
+    - "Java"
+    - "C++"
+    - "Python"
+    - "Lua"
+    - "JavaScript"
+    - "TypeScript"
+    - "FastAPI · Django"
+    - "AI Agents · LLMs"
+    - "CI/CD · App Store · Google Play"
+
+social:
+  - { network: linkedin,  url: "https://www.linkedin.com/in/paulocoutinhox", handle: "in/paulocoutinhox" }
+  - { network: github,    url: "https://github.com/paulocoutinhox",          handle: "@paulocoutinhox" }
+  - { network: site,      url: "https://paulocoutinho.pages.dev",            handle: "paulocoutinho.pages.dev" }
+  - { network: youtube,   url: "https://www.youtube.com/@paulocoutinhox",    handle: "@paulocoutinhox" }
+  - { network: instagram, url: "https://www.instagram.com/paulocoutinhox",   handle: "@paulocoutinhox" }
+  - { network: x,         url: "https://x.com/paulocoutinhox",               handle: "@paulocoutinhox" }
+
+languages:
+  - { name: "Portuguese", level: native }
+  - { name: "English",    level: advanced }
+
+experience:
+  - company: "Ubook"
+    location: "Greater Rio de Janeiro, Brazil"
+    company_size: big
+    role: "Mobile Engineering Manager — Co-founder"
+    start: { year: 2014, month: 1 }
+    end: null
+    description: >-
+      Co-founder and hands-on lead of the iOS and Android apps of one of the
+      largest audiobook and spoken-audio platforms in Latin America.
+    bullets:
+      - "Ubook Mobile SDK: shared C++ core for audio, sync and DRM used by the iOS (Swift) and Android (Kotlin) apps."
+      - "Offline-first playback and low-latency streaming."
+      - "Release pipeline for App Store and Google Play."
+      - "AI and LLM features inside the mobile apps."
+
+  - company: "PRSoluções"
+    location: "Greater Rio de Janeiro, Brazil"
+    company_size: small
+    role: "CEO · Mobile & Web Tech Lead"
+    start: { year: 2007, month: 6 }
+    end: { year: 2021, month: 1 }
+    description: >-
+      Founding partner leading the Mobile and Web teams for clients across Brazil.
+    bullets:
+      - "Native iOS and Android apps for client products."
+      - "Web back-ends and APIs in Python and JavaScript."
+
+  - company: "Umbarato.com"
+    location: "Greater Rio de Janeiro, Brazil"
+    company_size: mid
+    role: "Senior Web & Mobile Systems Analyst"
+    start: { year: 2011, month: 1 }
+    end: { year: 2014, month: 1 }
+    description: >-
+      Led the Web and Mobile initiatives of the e-commerce brand.
+    bullets:
+      - "Launch of the company's mobile products."
+      - "Team coordination and adoption of Scrum."
+
+  - company: "WebX Intermediações e Agenciamento via Internet"
+    location: "Brazil"
+    company_size: small
+    role: "Systems Development Analyst"
+    start: { year: 2011, month: 1 }
+    end: { year: 2015, month: 3 }
+    description: >-
+      Web systems for the Umbarato.com e-commerce brand.
+    bullets:
+      - "Back-end services, integrations and customer-facing features."
+
+  - company: "Bit Services Inovação e Tecnologia (Ideais)"
+    location: "Brazil"
+    company_size: mid
+    role: "Java Developer"
+    start: { year: 2010, month: 4 }
+    end: { year: 2011, month: 12 }
+    description: >-
+      Java modules for the Americanas, Shoptime and Submarino e-commerce sites.
+    bullets:
+      - "Customer control panel."
+      - "Payments and order management modules."
+
+  - company: "Boa Diversão Promoção e Entretenimento"
+    location: "Brazil"
+    company_size: small
+    role: "Web Developer"
+    start: { year: 2008, month: 1 }
+    end: { year: 2010, month: 4 }
+    description: >-
+      Internal web system used to run large events.
+    bullets:
+      - "Ticket sales and issuing, cash drops (sangrias), reports and event operations."
+
+  - company: "Zeus Consultoria"
+    location: "Brazil"
+    company_size: small
+    role: "Web & Desktop Developer (Visual Basic, Delphi)"
+    start: { year: 2006, month: 8 }
+    end: { year: 2008, month: 1 }
+    description: >-
+      Dynamic websites and Visual Basic / Delphi business applications for
+      clients.
+
+  - company: "Ecosystem de Alcântara Comércio e Serviços de Informática"
+    location: "Brazil"
+    company_size: small
+    role: "Desktop Developer (Visual Basic, Delphi) & Computer Assembly/Maintenance Technician"
+    start: { year: 2005, month: 1 }
+    end: { year: 2005, month: 8 }
+    description: >-
+      Visual Basic and Delphi desktop applications, plus computer assembly and
+      hardware maintenance.
+
+education:
+  - level: post_graduation
+    institution: "Estácio"
+    title: "Specialization in Mobile Development, Information Technology"
+    start: { year: 2022, month: 7 }
+    end: { year: 2023, month: 12 }
+    description: >-
+      Native Mobile development for Android and iOS using Java, Kotlin and Swift,
+      covering UI/UX, API integration, automated testing, distribution and
+      production-grade best practices.
+
+  - level: bachelor
+    institution: "FACITE"
+    title: "Bachelor's degree in Theology"
+    start: { year: 2019, month: 1 }
+    end: { year: 2021, month: 12 }
+
+certifications: []
+
+open_source_projects:
+  - title: "Haylen"
+    description: >-
+      My engine for games, multimedia apps and applications: a C++20 core with
+      its whole API in Lua, where one app package runs on macOS, Windows, Linux,
+      iOS, Android, tvOS, visionOS and the web.
+    bullets:
+      - "2D rendering, animation, physics, tiled maps, UI, text, audio, input and networking."
+      - "Metal, Direct3D, Vulkan, OpenGL and WebGPU back-ends."
+      - "Native plugins in Swift, Kotlin, Java, JavaScript and C++ behind one Lua API."
+      - "One CLI that creates, runs, tests and packages apps."
+    url: "https://github.com/haylen-org/haylen"
+    start: { year: 2026, month: 9 }
+    end: null
+
+  - title: "Varn"
+    description: >-
+      Lua runtime with a C++ core for writing back-ends, tools and apps once and
+      running the same code on Linux, macOS, Windows, iOS, Android and the
+      browser. HTTP and WebSocket servers, async tasks, files, crypto and
+      packaging come built in, so a project needs no extra libraries, and it
+      serves about 2.5× more requests per core than Node.js and Python.
+    url: "https://github.com/varn-org/varn"
+    start: { year: 2026, month: 9 }
+    end: null
+
+  - title: "IonClaw"
+    description: >-
+      Cross-platform AI agent orchestrator in C++ that turns any device,
+      including a phone, into a self-contained multi-agent automation platform.
+    url: "https://github.com/ionclaw-org/ionclaw"
+    start: { year: 2026, month: 3 }
+    end: null
+
+  - title: "PDFium Library"
+    description: >-
+      Ready-to-use builds of Google's PDFium for iOS, Android, macOS, Linux,
+      Windows and WebAssembly, so apps can render PDFs without setting up
+      Chromium's build toolchain. 1,000+ GitHub stars.
+    url: "https://github.com/paulocoutinhox/pdfium-lib"
+    start: { year: 2018, month: 5 }
+    end: null
+
+  - title: "XPLPC"
+    description: >-
+      Cross Platform Lite Procedure Call: calls shared C++ code from Swift,
+      Kotlin, Flutter, Python and WebAssembly on mobile, desktop and the web.
+    url: "https://github.com/xplpc/xplpc"
+    start: { year: 2023, month: 1 }
+    end: null
+
+  - title: "Nativium"
+    description: >-
+      C++ project template for writing a library once and compiling it for
+      iOS, Android, desktop and WebAssembly, with the build, dependencies and
+      mobile bindings already set up. It is the base of the Ubook Mobile SDK.
+    url: "https://github.com/nativium/nativium"
+    start: { year: 2022, month: 5 }
+    end: null
+
+  - title: "FastKit"
+    description: >-
+      Multi-tenant public site, admin panel and API built on FastAPI and served
+      by one process, with accounts, subscriptions, payments (Stripe,
+      RevenueCat) and content built in.
+    url: "https://github.com/paulocoutinhox/fastkit"
+    start: { year: 2026, month: 8 }
+    end: null
+
+  - title: "Kaktos"
+    description: "Python static site generator built for serverless deployment workflows."
+    url: "https://github.com/paulocoutinhox/kaktos"
+    start: { year: 2021, month: 10 }
+    end: null

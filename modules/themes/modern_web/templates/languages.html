@@ -1,0 +1,12 @@
+{% from "_section.html" import section_heading %}
+<section id="languages">
+    {{ section_heading(t('section.languages')) }}
+    <ul class="flex flex-wrap justify-center gap-4">
+        {% for entry in resume.languages %}
+            <li class="surface-card text-center basis-full sm:basis-[calc(50%-0.5rem)] lg:basis-[calc(33.333%-0.667rem)]">
+                <p class="text-base font-semibold text-slate-900">{{ entry.name }}</p>
+                <p class="mt-1 text-sm text-primary">{{ t('language_level.' ~ entry.level.value) }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</section>

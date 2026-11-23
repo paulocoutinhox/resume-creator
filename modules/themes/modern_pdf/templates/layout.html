@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ resume.profile.name }}">
+<head>
+    <meta charset="utf-8">
+    <title>{{ resume.profile.name }} — {{ resume.professional.role }}</title>
+    <style>{{ stylesheet | safe }}</style>
+</head>
+<body>
+    <main class="cv">
+        <aside class="cv__sidebar">
+            {% include "sidebar.html" %}
+        </aside>
+        <section class="cv__main">
+            {% include "main.html" %}
+        </section>
+    </main>
+</body>
+</html>

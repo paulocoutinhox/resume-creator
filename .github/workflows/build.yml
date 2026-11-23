@@ -1,0 +1,56 @@
+name: Build
+
+on:
+  push:
+    paths-ignore:
+      - "README.md"
+      - "docs/**"
+      - "**/*.md"
+      - "extras/images/**"
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install WeasyPrint System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libpango-1.0-0 libpangoft2-1.0-0 libcairo2 libgdk-pixbuf-2.0-0 \
+            libffi-dev shared-mime-info \
+            fonts-dejavu fonts-liberation
+
+      - name: Upgrade PIP
+        run: python -m pip install --upgrade pip
+
+      - name: Install Python Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build Everything
+        run: python main.py build
+
+      - name: Upload PDFs (all locales)
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdf
+          path: build/pdf/*.pdf
+
+      - name: Upload Web Build
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-web
+          path: build/web

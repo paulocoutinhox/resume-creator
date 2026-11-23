@@ -1,0 +1,72 @@
+section:
+  profile: "Perfil"
+  contact: "Contato"
+  social: "Redes Sociais"
+  languages: "Idiomas"
+  top_skills: "Principais Habilidades"
+  skills: "Habilidades"
+  experience: "Experiência Profissional"
+  education: "Formação Acadêmica"
+  certifications: "Licenças e Certificações"
+  side_projects: "Projetos Pessoais"
+  open_source_projects: "Projetos Open Source"
+
+label:
+  role: "Cargo"
+  career_experience: "Experiência de carreira"
+  gender: "Gênero"
+  citizenship: "Cidadania"
+  pronouns: "Pronomes"
+  birth_date: "Data de nascimento"
+  present: "Atual"
+  email: "E-mail"
+  phone: "Telefone"
+  whatsapp: "WhatsApp"
+  location: "Localização"
+  view_project: "Ver projeto"
+  view_credential: "Ver credencial"
+
+company_size:
+  small: "Pequena empresa"
+  mid: "Média empresa"
+  big: "Grande empresa"
+
+education_level:
+  high_school: "Ensino médio"
+  unfinished_bachelor: "Graduação incompleta"
+  two_year: "Curso de dois anos"
+  bachelor: "Graduação"
+  post_graduation: "Pós-graduação"
+  mba: "MBA"
+  master: "Mestrado"
+  doctoral: "Doutorado"
+  post_doctoral: "Pós-doutorado"
+
+language_level:
+  basic: "Básico"
+  intermediate: "Intermediário"
+  upper_intermediate: "Intermediário avançado"
+  advanced: "Avançado"
+  fluent: "Fluente"
+  native: "Nativo"
+
+pronouns:
+  he/him: "Ele/Dele"
+  she/her: "Ela/Dela"
+  they/them: "Elu/Delu"
+  custom: "{value}"
+
+gender:
+  male: "Masculino"
+  female: "Feminino"
+  other: "Outro"
+
+duration:
+  month_one: "{count} mês"
+  month_other: "{count} meses"
+  year_one: "{count} ano"
+  year_other: "{count} anos"
+  year_and_month: "{years} e {months}"
+
+date_range:
+  open: "{start} – {end}"

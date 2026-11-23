@@ -1,0 +1,82 @@
+{% set profile = resume.profile %}
+
+{% if photo_uri %}
+    <div class="cv__photo-frame">
+        <img class="cv__photo" src="{{ photo_uri }}" alt="{{ profile.name }}">
+    </div>
+{% endif %}
+
+<section class="cv__section cv__section--sidebar">
+    <h2 class="cv__section-title cv__section-title--sidebar">{{ t('section.contact') }}</h2>
+    <ul class="cv__contact">
+        {% if profile.location %}
+            <li>{{ icon(IconKey.MAP_PIN, 'cv__icon', stroke='#ffffff') | safe }}<span>{{ profile.location }}</span></li>
+        {% endif %}
+        <li>{{ icon(IconKey.MAIL, 'cv__icon', stroke='#ffffff') | safe }}<a href="mailto:{{ profile.email }}">{{ profile.email }}</a></li>
+        {% if profile.phone %}
+            <li>{{ icon(IconKey.PHONE, 'cv__icon', stroke='#ffffff') | safe }}<a href="tel:{{ profile.phone | replace(' ', '') }}">{{ profile.phone }}</a></li>
+        {% endif %}
+        {% if profile.whatsapp %}
+            <li>{{ icon(IconKey.WHATSAPP, 'cv__icon', stroke='#ffffff') | safe }}<a href="https://wa.me/{{ profile.whatsapp | replace(' ', '') | replace('+', '') }}">{{ profile.whatsapp }}</a></li>
+        {% endif %}
+        {% if profile.citizenship %}
+            <li>{{ icon(IconKey.GLOBE, 'cv__icon', stroke='#ffffff') | safe }}<span>{{ t('label.citizenship') }}: {{ profile.citizenship }}</span></li>
+        {% endif %}
+        {% if profile.gender %}
+            <li>{{ icon(IconKey.USER, 'cv__icon', stroke='#ffffff') | safe }}<span>{{ t('label.gender') }}: {{ t('gender.' ~ profile.gender.value) }}</span></li>
+        {% endif %}
+        {% if profile.pronouns %}
+            <li>{{ icon(IconKey.USER, 'cv__icon', stroke='#ffffff') | safe }}<span>{{ t('pronouns.' ~ profile.pronouns.value, value=profile.pronouns_custom or '') }}</span></li>
+        {% endif %}
+        {% if profile.birth %}
+            <li>{{ icon(IconKey.CALENDAR, 'cv__icon', stroke='#ffffff') | safe }}<span>{{ t('label.birth_date') }}: {{ format_birth_date(profile.birth) }}</span></li>
+        {% endif %}
+    </ul>
+</section>
+
+{% if resume.social %}
+<section class="cv__section cv__section--sidebar">
+    <h2 class="cv__section-title cv__section-title--sidebar">{{ t('section.social') }}</h2>
+    <ul class="cv__contact">
+        {% for link in resume.social %}
+            <li>
+                {{ icon(social_icon_key(link.network), 'cv__icon', stroke='#ffffff') | safe }}
+                <a href="{{ link.url }}">{{ link.handle or link.url }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
+
+{% if resume.languages %}
+<section class="cv__section cv__section--sidebar">
+    <h2 class="cv__section-title cv__section-title--sidebar">{{ t('section.languages') }}</h2>
+    <ul class="cv__contact">
+        {% for entry in resume.languages %}
+            <li>{{ icon(IconKey.LANGUAGES, 'cv__icon', stroke='#ffffff') | safe }}<span>{{ entry.name }} — {{ t('language_level.' ~ entry.level.value) }}</span></li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
+
+{% if resume.professional.top_skills %}
+<section class="cv__section cv__section--sidebar">
+    <h2 class="cv__section-title cv__section-title--sidebar">{{ t('section.top_skills') }}</h2>
+    <ul class="cv__tags">
+        {% for skill in resume.professional.top_skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
+
+{% if resume.professional.skills %}
+<section class="cv__section cv__section--sidebar">
+    <h2 class="cv__section-title cv__section-title--sidebar">{{ t('section.skills') }}</h2>
+    <ul class="cv__tags">
+        {% for skill in resume.professional.skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
